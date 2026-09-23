@@ -1,0 +1,51 @@
+.case {
+  padding-block: var(--space-24);
+  border-bottom: 1px solid var(--border);
+}
+
+.case__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.case__field {
+  margin-top: var(--space-4);
+  color: var(--body);
+  font-size: 0.98rem;
+}
+
+.case__field strong {
+  color: var(--ink);
+}
+
+.case__metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-6);
+}
+
+.case__metric {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.case__metric-value {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--accent);
+  letter-spacing: -0.03em;
+}
+
+.case__metric-label {
+  display: block;
+  margin-top: var(--space-2);
+  color: var(--muted);
+  font-size: 0.85rem;
+}

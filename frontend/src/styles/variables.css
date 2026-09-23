@@ -1,0 +1,49 @@
+:root {
+  /* Surfaces — dark navy tinted toward the brand blue's own hue */
+  --bg: #080b13;
+  --surface: #101623;
+  --surface-2: #161e30;
+  --border: #23304a;
+  --border-strong: #34456b;
+
+  /* Text */
+  --ink: #f5f8ff;
+  --body: #c7d0e0;
+  --muted: #8a95ac;
+
+  /* Brand — sampled from the Cybrinks logo gradient, nudged for ≥4.5:1 with white text */
+  --primary: #0a6de6;
+  --primary-strong: #0857c2;
+  --primary-ink: #ffffff;
+  --accent: #3aa0ff;
+  --accent-ink: #071022;
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Layout */
+  --content-width: 1180px;
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 480ms;
+
+  /* z-index scale */
+  --z-sticky-nav: 10;
+  --z-modal: 50;
+}
