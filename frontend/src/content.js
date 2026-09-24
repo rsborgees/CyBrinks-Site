@@ -29,6 +29,7 @@ export const hero = {
   tags: ["Proteção", "Conformidade", "Governança", "Resiliência"],
   ctaPrimary: { label: "Falar com um especialista", href: "#contato" },
   ctaSecondary: { label: "Ver serviços", href: "#servicos" },
+  strapline: "Experiência • Estratégia • Resultado",
 };
 
 export const about = {

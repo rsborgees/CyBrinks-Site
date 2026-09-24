@@ -60,6 +60,15 @@
   margin-top: var(--space-12);
 }
 
+.hero__strapline {
+  margin-top: var(--space-8);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 @media (max-width: 560px) {
   .hero {
     min-height: auto;

@@ -36,22 +36,33 @@ export default function Header() {
             href={contact.whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-primary header__cta"
+            className="btn btn-primary header__cta header__cta--mobile"
             onClick={closeMenu}
           >
             Falar no WhatsApp
           </a>
         </nav>
 
-        <button
-          type="button"
-          className="header__toggle"
-          aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
-          aria-expanded={isOpen}
-          onClick={() => setIsOpen((open) => !open)}
-        >
-          <Icon name={isOpen ? "x" : "menu"} />
-        </button>
+        <div className="header__actions">
+          <a
+            href={contact.whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary header__cta header__cta--desktop"
+          >
+            Falar no WhatsApp
+          </a>
+
+          <button
+            type="button"
+            className="header__toggle"
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isOpen}
+            onClick={() => setIsOpen((open) => !open)}
+          >
+            <Icon name={isOpen ? "x" : "menu"} />
+          </button>
+        </div>
       </div>
     </header>
   );

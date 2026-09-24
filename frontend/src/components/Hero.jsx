@@ -31,6 +31,8 @@ export default function Hero() {
             {hero.ctaSecondary.label}
           </a>
         </div>
+
+        <p className="hero__strapline">{hero.strapline}</p>
       </div>
     </section>
   );
