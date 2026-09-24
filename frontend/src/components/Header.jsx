@@ -12,9 +12,15 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header__bar">
-        <a href="#top" className="header__brand" onClick={closeMenu}>
-          <img src={logo} alt="Cybrinks Digital Trust" className="header__logo" />
-        </a>
+        <div className="header__brand-group">
+          <a href="#top" className="header__brand" onClick={closeMenu}>
+            <img src={logo} alt="Cybrinks Digital Trust" className="header__logo" />
+          </a>
+          <span className="header__status" aria-hidden="true">
+            <span className="header__status-dot" />
+            Monitoramento ativo
+          </span>
+        </div>
 
         <nav className={`header__nav${isOpen ? " is-open" : ""}`} aria-label="Navegação principal">
           <ul>

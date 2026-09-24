@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   background: var(--bg);
   color: var(--body);
@@ -32,6 +33,27 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      color-mix(in oklch, black 35%, transparent) 0px,
+      transparent 1px,
+      transparent 3px
+    ),
+    radial-gradient(
+      ellipse 120% 60% at 50% -10%,
+      color-mix(in oklch, var(--primary) 12%, transparent),
+      transparent 60%
+    );
+  opacity: 0.5;
 }
 
 h1,
